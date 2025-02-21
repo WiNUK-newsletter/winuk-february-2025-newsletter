@@ -57,7 +57,7 @@ footer a {
 }
 .month {
   font-size: 75px;
-  color: var(--blog-three);
+  color: #d55da0;
   padding: 0;
 }
 hr {
@@ -150,24 +150,53 @@ h4 {
   height: 300px;
 }
 .feedback {
-  background-color: var(--blog-three);
+  background-color: #d55da0;
 }
-.wrapped {
-  background-color: #3e9f9f;
+.decorative-element {
+  background-image: url("../images/decorative\ element.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  height: 150px;
 }
+
 .arrow {
-  background-color: #fb78cc;
+  background-color: #dd429d;
   text-align: center;
-  padding: 60px 10px;
+
+  height: 440px;
+
+  --mask: radial-gradient(40.31px at 55px 50%, #000 99%, #0000 101%) 0
+      calc(50% - 40px) / 51% 80px repeat-y,
+    radial-gradient(40.31px at -35px 50%, #0000 99%, #000 101%) 20px 50% /
+      calc(51% - 20px) 80px repeat-y,
+    radial-gradient(40.31px at calc(100% - 55px) 50%, #000 99%, #0000 101%) 100%
+      calc(50% - 40px) / 51% 80px repeat-y,
+    radial-gradient(40.31px at calc(100% + 35px) 50%, #0000 99%, #000 101%)
+      calc(100% - 20px) 50% / calc(51% - 20px) 80px repeat-y;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  --mask: radial-gradient(40.31px at 50% 55px, #000 99%, #0000 101%)
+      calc(50% - 40px) 0/80px 51% repeat-x,
+    radial-gradient(40.31px at 50% -35px, #0000 99%, #000 101%) 50% 20px/80px
+      calc(51% - 20px) repeat-x,
+    radial-gradient(40.31px at 50% calc(100% - 55px), #000 99%, #0000 101%)
+      calc(50% - 40px) 100%/80px 51% repeat-x,
+    radial-gradient(40.31px at 50% calc(100% + 35px), #0000 99%, #000 101%) 50%
+      calc(100% - 20px) / 80px calc(51% - 20px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
-.events-2025 {
-  background-color: #9d629d;
-}
-.upcoming-events {
+
+.virtual-events {
   background-color: #4c9dc6;
 }
+.upcoming-events {
+  background-color: #3e9f9f;
+}
 .speed {
-  height: 600px;
+  height: 450px;
   display: block;
   margin: 0 auto;
 }
@@ -258,6 +287,12 @@ a {
   .socialmedia img {
     display: block;
     margin: auto;
+  }
+  .decorative-element {
+    background-size: 350%;
+  }
+  .speed {
+    height: 300px;
   }
   .content-box {
     width: 100%;
