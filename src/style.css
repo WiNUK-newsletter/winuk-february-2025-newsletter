@@ -57,7 +57,7 @@ footer a {
 }
 .month {
   font-size: 75px;
-  color: var(--third-colour);
+  color: var(--blog-three);
   padding: 0;
 }
 hr {
@@ -72,7 +72,7 @@ hr {
   text-align: left;
 }
 .quote {
-  background-color: #d46ba9;
+  background-color: var(--third-colour);
   height: 190px;
   margin: auto;
 }
@@ -99,7 +99,7 @@ h4 {
   font-size: 30px;
 }
 .newsletter-codirector {
-  height: 170px;
+  height: 140px;
 
   border-radius: 50%;
   display: block;
@@ -116,6 +116,9 @@ h4 {
 .message {
   color: #783a77;
   font-weight: bold;
+}
+.blog-article a {
+  color: #783a77;
 }
 
 .inaugural,
